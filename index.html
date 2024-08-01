@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMDB Movie Fetcher</title>
+    <style>
+      .movie-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-top: 5rem;
+      }
+      #movie-poster {
+        max-width: 200px;
+        height: auto;
+      }
+      #movie-data {
+        flex: 1;
+      }
+      #movie-id-input {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="movie-id-input" placeholder="Enter movie ID" />
+    <button id="search-button">Search</button>
+    <div id="movie-container" class="movie-container">
+      <img id="movie-poster" alt="Movie Poster Image" />
+      <div id="movie-data"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
