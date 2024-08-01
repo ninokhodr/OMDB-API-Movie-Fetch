@@ -44,9 +44,9 @@ function displayMovieDetails(daata) {
 }
 
 document.getElementById("search-button").addEventListener("click", () => {
-  const movieId = document.getElementById("movie-id-input").value;
-  if (movieId) {
-    fetchMovieDetails(apiKey, movieId);
+  const movieTitle = document.getElementById("movie-title-input").value;
+  if (movieTitle) {
+    fetchMovieDetails(apiKey, movieTitle);
   } else {
     alert("Please enter a movie Title.");
   }

@@ -1,0 +1,16 @@
+.movie-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+#movie-poster {
+  max-width: 200px;
+  height: auto;
+}
+#movie-data {
+  flex: 1;
+}
+#movie-id-input {
+  margin-top: 1rem;
+}
